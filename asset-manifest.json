@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/msncoder/react-portfolio.git/static/css/main.fa752e43.css",
-    "main.js": "/msncoder/react-portfolio.git/static/js/main.5461af9b.js",
-    "static/js/453.b05d8aa5.chunk.js": "/msncoder/react-portfolio.git/static/js/453.b05d8aa5.chunk.js",
-    "static/media/mock10.png": "/msncoder/react-portfolio.git/static/media/mock10.2d05b02ba569a430a255.png",
-    "static/media/mock09.png": "/msncoder/react-portfolio.git/static/media/mock09.e18677ccfc932e52d754.png",
-    "static/media/mock08.png": "/msncoder/react-portfolio.git/static/media/mock08.13f46873fdbd382f4b76.png",
-    "static/media/black_white_personal_pic.png": "/msncoder/react-portfolio.git/static/media/black_white_personal_pic.ee36d406f0c7fd641829.png",
-    "static/media/mock04.png": "/msncoder/react-portfolio.git/static/media/mock04.f7b5679efade992a078c.png",
-    "static/media/bg-light.png": "/msncoder/react-portfolio.git/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/mock07.png": "/msncoder/react-portfolio.git/static/media/mock07.3f1110f482232b33c6a2.png",
-    "static/media/mock05.png": "/msncoder/react-portfolio.git/static/media/mock05.4faafa70d200d1519a34.png",
-    "static/media/mock06.png": "/msncoder/react-portfolio.git/static/media/mock06.ea816617e0d0fa0f63ca.png",
-    "static/media/bg-dark.png": "/msncoder/react-portfolio.git/static/media/bg-dark.f420c6b8458af72de935.png",
-    "static/media/mock01.png": "/msncoder/react-portfolio.git/static/media/mock01.61bd486a54bf6e17ee5a.png",
-    "static/media/mock02.png": "/msncoder/react-portfolio.git/static/media/mock02.bced48ae9cdda3acf1a3.png",
-    "static/media/mock03.png": "/msncoder/react-portfolio.git/static/media/mock03.a4600719e0b5d2a3155b.png",
-    "index.html": "/msncoder/react-portfolio.git/index.html",
-    "main.fa752e43.css.map": "/msncoder/react-portfolio.git/static/css/main.fa752e43.css.map",
-    "main.5461af9b.js.map": "/msncoder/react-portfolio.git/static/js/main.5461af9b.js.map",
-    "453.b05d8aa5.chunk.js.map": "/msncoder/react-portfolio.git/static/js/453.b05d8aa5.chunk.js.map"
+    "main.css": "/react-portfolio/static/css/main.908d14ce.css",
+    "main.js": "/react-portfolio/static/js/main.c262719d.js",
+    "static/js/453.b05d8aa5.chunk.js": "/react-portfolio/static/js/453.b05d8aa5.chunk.js",
+    "static/media/mock10.png": "/react-portfolio/static/media/mock10.2d05b02ba569a430a255.png",
+    "static/media/mock09.png": "/react-portfolio/static/media/mock09.e18677ccfc932e52d754.png",
+    "static/media/mock08.png": "/react-portfolio/static/media/mock08.13f46873fdbd382f4b76.png",
+    "static/media/black_white_personal_pic.png": "/react-portfolio/static/media/black_white_personal_pic.ee36d406f0c7fd641829.png",
+    "static/media/mock04.png": "/react-portfolio/static/media/mock04.f7b5679efade992a078c.png",
+    "static/media/bg-light.png": "/react-portfolio/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/mock07.png": "/react-portfolio/static/media/mock07.3f1110f482232b33c6a2.png",
+    "static/media/mock05.png": "/react-portfolio/static/media/mock05.4faafa70d200d1519a34.png",
+    "static/media/mock06.png": "/react-portfolio/static/media/mock06.ea816617e0d0fa0f63ca.png",
+    "static/media/bg-dark.png": "/react-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/mock01.png": "/react-portfolio/static/media/mock01.61bd486a54bf6e17ee5a.png",
+    "static/media/mock02.png": "/react-portfolio/static/media/mock02.bced48ae9cdda3acf1a3.png",
+    "static/media/mock03.png": "/react-portfolio/static/media/mock03.a4600719e0b5d2a3155b.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.908d14ce.css.map": "/react-portfolio/static/css/main.908d14ce.css.map",
+    "main.c262719d.js.map": "/react-portfolio/static/js/main.c262719d.js.map",
+    "453.b05d8aa5.chunk.js.map": "/react-portfolio/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa752e43.css",
-    "static/js/main.5461af9b.js"
+    "static/css/main.908d14ce.css",
+    "static/js/main.c262719d.js"
   ]
 }
