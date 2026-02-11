@@ -100,11 +100,10 @@ function Expertise() {
             <FontAwesomeIcon icon={faPython} size="3x" />
             <h3>Web & Data Scraping with Selenium</h3>
             <p>
-              Develop automated web scraping solutions using Selenium to
-              extract, process, and structure data from dynamic websites.
-              Implement browser automation, data cleaning, scheduling, and
-              integration with databases or APIs to support analytics, research,
-              and business intelligence needs.
+              Build automated web scraping solutions with Selenium to extract
+              and structure data from dynamic websites, including browser
+              automation, data cleaning, and integration with databases or APIs
+              for analytics and business insights.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
