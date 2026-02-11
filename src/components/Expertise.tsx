@@ -89,11 +89,10 @@ function Expertise() {
             {React.createElement(SiFastapi as any, { size: "3em" })}
             <h3>Scraping Automation with FastAPI</h3>
             <p>
-              Develop automated web scraping systems powered by FastAPI to
-              collect, process, and serve data through secure RESTful APIs.
-              Implement background tasks, scheduling, data storage, and seamless
-              integration with external systems to deliver scalable and
-              efficient data automation solutions.
+              Built FastAPI-powered web scraping systems to automate data
+              collection, processing, and delivery through RESTful APIs,
+              incorporating background tasks, scheduling, and database
+              integration for optimized automation.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
@@ -107,11 +106,10 @@ function Expertise() {
             <FontAwesomeIcon icon={faPython} size="3x" />
             <h3>Agentic AI Solutions</h3>
             <p>
-              Design and develop Agentic AI systems that autonomously plan,
-              reason, and execute tasks using large language models (LLMs).
-              Build intelligent agents capable of tool usage, workflow
-              automation, decision-making, and real-time data interaction to
-              solve complex business problems efficiently.
+              Develop autonomous Agentic AI solutions with LLMs, enabling
+              intelligent agents to perform tool-assisted workflows, automate
+              tasks, make decisions, and interact with real-time data for
+              effective business problem-solving.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
