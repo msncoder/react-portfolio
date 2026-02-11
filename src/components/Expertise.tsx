@@ -19,10 +19,14 @@ const labelsFirst = [
   "HTML5",
   "CSS3",
   "SASS",
+  "Celery",
+  "Redis",
   "SQL",
   "PostgreSQL",
-  "Deploy",
+  "Git",
+  "GitHub",
   "Render Hosting",
+  "Domain Integration",
 ];
 
 const labelsSecond = [
@@ -32,29 +36,30 @@ const labelsSecond = [
   "OpenAPI (Swagger)",
   "MongoDB",
   "SQLAlchemy",
-  "Celery",
-  "Redis",
-  "Redis",
   "JWT",
-  "Git",
-  "GitHub",
-  "Domain Integration",
-];
-
-const labelsThird = [
-  "Python",
   "Selenium WebDriver",
   "ChromeDriver",
   "GeckoDriver",
   "Pandas",
   "NumPy",
   "BeautifulSoup",
-  "lxml",
-  "CSV",
-  "JSON",
-  "Excel",
-  "Cron Jobs",
-  "APScheduler",
+];
+
+const labelsThird = [
+  "OpenAI",
+  "GPT",
+  "Claude",
+  "Open-Source LLMs",
+  "LangChain",
+  "CrewAI",
+  "AutoGen",
+  "FastAPI",
+  "FAISS",
+  "Pinecone",
+  "Weaviate",
+  "RAG Embeddings",
+  "RAG Semantic Search",
+  "Webhooks",
 ];
 
 function Expertise() {
@@ -82,11 +87,13 @@ function Expertise() {
 
           <div className="skill">
             {React.createElement(SiFastapi as any, { size: "3em" })}
-            <h3>Software Automation with FastAPI</h3>
+            <h3>Scraping Automation with FastAPI</h3>
             <p>
-              Create efficient software automation solutions with FastAPI,
-              focusing on API development, workflow automation, and seamless
-              system integration.
+              Develop automated web scraping systems powered by FastAPI to
+              collect, process, and serve data through secure RESTful APIs.
+              Implement background tasks, scheduling, data storage, and seamless
+              integration with external systems to deliver scalable and
+              efficient data automation solutions.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
@@ -98,12 +105,13 @@ function Expertise() {
 
           <div className="skill">
             <FontAwesomeIcon icon={faPython} size="3x" />
-            <h3>Web & Data Scraping with Selenium</h3>
+            <h3>Agentic AI Solutions</h3>
             <p>
-              Build automated web scraping solutions with Selenium to extract
-              and structure data from dynamic websites, including browser
-              automation, data cleaning, and integration with databases or APIs
-              for analytics and business insights.
+              Design and develop Agentic AI systems that autonomously plan,
+              reason, and execute tasks using large language models (LLMs).
+              Build intelligent agents capable of tool usage, workflow
+              automation, decision-making, and real-time data interaction to
+              solve complex business problems efficiently.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>

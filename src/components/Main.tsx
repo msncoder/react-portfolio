@@ -29,7 +29,7 @@ function Main() {
             </a>
           </div>
           <h1>Saad</h1>
-          <p>BackEnd / Scraping Expert</p>
+          <p>BackEnd / Agentic AI Developer</p>
 
           <div className="mobile_social_icons">
             <a
