@@ -90,19 +90,6 @@ function Project() {
             created the entire platform from scratch using Ruby on Rails.
           </p>
         </div>
-        <div className="project">
-          <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer">
-            <img src={mock06} className="zoom" alt="thumbnail" width="100%" />
-          </a>
-          <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer">
-            <h2>WeManage: Real Estate Asset Management</h2>
-          </a>
-          <p>
-            This mobile application allows realtors in Japan to securely manage
-            their property information and view future income predictions. This
-            app is built with Ruby on Rails and JavaScript.
-          </p>
-        </div>
       </div>
     </div>
   );

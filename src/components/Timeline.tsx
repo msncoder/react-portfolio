@@ -30,7 +30,7 @@ function Timeline() {
             <p>
               Full-stack development, Agentic AI & LLM solutions, RAG-based
               systems, and business-focused software automation
-            </p>    
+            </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -54,7 +54,7 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">
-              Backend Engineer Intern
+              Full Stack Intern
             </h3>
             <h4 className="vertical-timeline-element-subtitle">Karachi, PK</h4>
             <p>

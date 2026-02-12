@@ -19,13 +19,13 @@
   }
 
   fieldset {
-    background-color: white;
+    background-color: transparent !important;
   }
 }
 
 label {
   font-size: 1.2rem;
-  font-family: 'DomaineDispNar-Medium', sans-serif;
+  font-family: "DomaineDispNar-Medium", sans-serif;
 }
 
 .form-flex {
@@ -45,4 +45,133 @@ form {
 .body-form {
   width: 100% !important;
   margin-bottom: 15px !important;
+}
+
+.contact-form .MuiTextField-root {
+  width: 100%;
+}
+
+// 🌙 DARK MODE STYLES
+.dark-mode {
+  .contact-form .MuiOutlinedInput-root {
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 4px;
+
+    &:hover fieldset {
+      border-color: #5000ca !important;
+    }
+
+    &.Mui-focused fieldset {
+      border-color: #5000ca !important;
+    }
+  }
+
+  .contact-form .MuiOutlinedInput-input {
+    color: white !important;
+    font-size: 1rem !important;
+    caret-color: white !important;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7) !important;
+      opacity: 1 !important;
+    }
+
+    &::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    &::-moz-placeholder {
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    &:-ms-input-placeholder {
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+  }
+
+  .contact-form .MuiInputLabel-root {
+    color: rgba(255, 255, 255, 0.7) !important;
+
+    &.Mui-focused {
+      color: #5000ca !important;
+    }
+
+    &.MuiInputLabel-shrink {
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+  }
+
+  .contact-form .MuiFormHelperText-root {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+}
+
+// ☀️ LIGHT MODE STYLES
+.light-mode {
+  .contact-form .MuiOutlinedInput-root {
+    color: #050f0b !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 4px;
+
+    &:hover fieldset {
+      border-color: #5000ca !important;
+    }
+
+    &.Mui-focused fieldset {
+      border-color: #5000ca !important;
+    }
+  }
+
+  .contact-form .MuiOutlinedInput-input {
+    color: #050f0b !important;
+    font-size: 1rem !important;
+    caret-color: #050f0b !important;
+
+    &::placeholder {
+      color: rgba(5, 15, 11, 0.6) !important;
+      opacity: 1 !important;
+    }
+
+    &::-webkit-input-placeholder {
+      color: rgba(5, 15, 11, 0.6) !important;
+    }
+
+    &::-moz-placeholder {
+      color: rgba(5, 15, 11, 0.6) !important;
+    }
+
+    &:-ms-input-placeholder {
+      color: rgba(5, 15, 11, 0.6) !important;
+    }
+  }
+
+  .contact-form .MuiInputLabel-root {
+    color: rgba(5, 15, 11, 0.7) !important;
+
+    &.Mui-focused {
+      color: #5000ca !important;
+    }
+
+    &.MuiInputLabel-shrink {
+      color: rgba(5, 15, 11, 0.7) !important;
+    }
+  }
+
+  .contact-form .MuiFormHelperText-root {
+    color: rgba(5, 15, 11, 0.7) !important;
+  }
+}
+
+// Success and error message styles
+.success-msg {
+  color: #4caf50;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.error-msg {
+  color: #f44336;
+  margin-top: 15px;
+  font-size: 1rem;
 }
