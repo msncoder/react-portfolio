@@ -26,7 +26,9 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">
               Backend & Agentic AI Specialist
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">UpWork</h4>
+            <h4 className="vertical-timeline-element-subtitle">
+              Freelance jobs
+            </h4>
             <p>
               Full-stack development, Agentic AI & LLM solutions, RAG-based
               systems, and business-focused software automation
