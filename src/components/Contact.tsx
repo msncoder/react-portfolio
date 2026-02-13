@@ -81,7 +81,7 @@ function Contact() {
                 onChange={(e) => setName(e.target.value)}
                 error={nameError}
                 helperText={nameError ? "Please enter your name" : ""}
-                name="from_name"
+                name="name"
               />
 
               <TextField
@@ -96,7 +96,7 @@ function Contact() {
                 helperText={
                   emailError ? "Please enter your email or phone number" : ""
                 }
-                name="from_email"
+                name="email"
               />
             </div>
 
@@ -113,7 +113,7 @@ function Contact() {
               onChange={(e) => setMessage(e.target.value)}
               error={messageError}
               helperText={messageError ? "Please enter the message" : ""}
-              name="from_message"
+              name="message"
             />
 
             <Button
