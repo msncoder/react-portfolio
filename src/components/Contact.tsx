@@ -4,12 +4,6 @@ import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import TextField from "@mui/material/TextField";
 
-function encode(data: Record<string, string>) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
-
 function Contact() {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -22,44 +16,27 @@ function Contact() {
   const [successMsg, setSuccessMsg] = useState<string>("");
   const [errorMsg, setErrorMsg] = useState<string>("");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     // Reset previous messages
     setSuccessMsg("");
     setErrorMsg("");
 
     // Validate inputs
-    setNameError(name.trim() === "");
-    setEmailError(email.trim() === "");
-    setMessageError(message.trim() === "");
+    const hasName = name.trim() !== "";
+    const hasEmail = email.trim() !== "";
+    const hasMessage = message.trim() !== "";
 
-    if (!name || !email || !message) {
+    setNameError(!hasName);
+    setEmailError(!hasEmail);
+    setMessageError(!hasMessage);
+
+    if (!hasName || !hasEmail || !hasMessage) {
+      e.preventDefault();
       return;
     }
 
-    const formData = {
-      "form-name": "contact",
-      name,
-      email,
-      message,
-    };
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode(formData),
-    })
-      .then(() => {
-        setSuccessMsg("Message sent successfully!");
-        setName("");
-        setEmail("");
-        setMessage("");
-      })
-      .catch((error) => {
-        setErrorMsg("Failed to send message. Please try again later.");
-        console.error("Netlify form submission error:", error);
-      });
+    // Successful validation: allow normal HTML form submission to Netlify.
+    // Netlify will process the form and send notifications based on your Netlify settings.
   };
 
   return (

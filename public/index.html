@@ -29,6 +29,27 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <!-- Netlify detects forms only from static HTML at build time. -->
+    <div style="display:none;">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <p>
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
+        <p>
+          <label>Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
