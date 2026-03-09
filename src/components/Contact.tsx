@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import "../assets/styles/Contact.scss";
-import emailjs from "@emailjs/browser";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import TextField from "@mui/material/TextField";
+
+function encode(data: Record<string, string>) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
 
 function Contact() {
   const [name, setName] = useState<string>("");
@@ -17,7 +22,7 @@ function Contact() {
   const [successMsg, setSuccessMsg] = useState<string>("");
   const [errorMsg, setErrorMsg] = useState<string>("");
 
-  const sendEmail = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     // Reset previous messages
@@ -29,29 +34,32 @@ function Contact() {
     setEmailError(email.trim() === "");
     setMessageError(message.trim() === "");
 
-    if (name && email && message) {
-      const templateParams = { name, email, message };
-
-      emailjs
-        .send(
-          "service_04s2s0m", // your Service ID
-          "template_puwfjmh", // your Template ID
-          templateParams,
-          "Xpe72QwMhvFJ3F3jo", // your Public Key / API Key
-        )
-        .then(
-          (response) => {
-            setSuccessMsg("Message sent successfully!");
-            setName("");
-            setEmail("");
-            setMessage("");
-          },
-          (error) => {
-            setErrorMsg("Failed to send message. Please try again later.");
-            console.error("EmailJS error:", error);
-          },
-        );
+    if (!name || !email || !message) {
+      return;
     }
+
+    const formData = {
+      "form-name": "contact",
+      name,
+      email,
+      message,
+    };
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode(formData),
+    })
+      .then(() => {
+        setSuccessMsg("Message sent successfully!");
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((error) => {
+        setErrorMsg("Failed to send message. Please try again later.");
+        console.error("Netlify form submission error:", error);
+      });
   };
 
   return (
@@ -72,7 +80,7 @@ function Contact() {
             noValidate
             autoComplete="off"
             className="contact-form"
-            onSubmit={sendEmail}
+            onSubmit={handleSubmit}
           >
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>
