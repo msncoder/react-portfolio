@@ -19,20 +19,35 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
             contentArrowStyle={{ borderRight: "7px solid  white" }}
-            date="2024 - present"
+            date="Present"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">
-              Backend & Agentic AI Specialist
+              Software Engineer
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Freelance jobs
+              Authentik Track And Trace
             </h4>
             <p>
-              Full-stack development, Agentic AI & LLM solutions, RAG-based
-              systems, and business-focused software automation
+              Develop Python backend applications and build Agentic AI, LLM-powered, and RAG-based systems, with a focus on business process automation and scalable software solutions.
             </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Present"
+            iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Agentic AI Trainer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">SMIT Karachi, PK</h4>
+            <p>
+            Teaching FastAPI, LangChain, LangGraph, LangFlow, 
+            and other Agentic AI technologies, with a focus on building AI-powered applications and multi-agent systems.
+          </p>
+
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -43,39 +58,14 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">
               Full Stack Instructor
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">Karachi, PK</h4>
+            <h4 className="vertical-timeline-element-subtitle">Aptech Karachi, PK</h4>
             <p>
               Frontend Development, Backend Development, Provide Mentorship,
               Team Leading
             </p>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2023 - 2023"
-            iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Full Stack Intern
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">Karachi, PK</h4>
-            <p>
-              Full-stack Development, API Development, API Integration, FrontEnd
-              Developement
-            </p>
-          </VerticalTimelineElement>
-          {/* <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
-            <p>
-              Automation, Data Governance, Statistical Analysis
-            </p>
-          </VerticalTimelineElement> */}
+          
+        
         </VerticalTimeline>
       </div>
     </div>
