@@ -53,14 +53,14 @@ function Project() {
         </div>
         <div className="project">
           <a
-            href="https://yujisatojr.itch.io/spacecraft"
+            href="https://multi-agent-research-systemgit-msndev.streamlit.app/t"
             target="_blank"
             rel="noreferrer"
           >
             <img src={mock08} className="zoom" alt="thumbnail" width="100%" height="320px" />
           </a>
           <a
-            href="https://yujisatojr.itch.io/spacecraft"
+            href="https://multi-agent-research-systemgit-msndev.streamlit.app/t"
             target="_blank"
             rel="noreferrer"
           >
